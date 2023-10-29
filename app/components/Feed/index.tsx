@@ -27,7 +27,7 @@ const Feed = () => {
             >
               Live Preview
             </Button>
-            <div className="relative flex flex-col grow items-center justify-center w-full lg:h-[50vh]">
+            <div className="relative flex flex-col grow items-center justify-center lg:w-full lg:h-[50vh]">
               {/* Main Tweet Component */}
               <Tweet />
             </div>

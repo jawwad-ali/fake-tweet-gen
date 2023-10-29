@@ -31,7 +31,7 @@ const Tweet = () => {
   const desktopView = useSelector((state: any) => state.tweet.preview);
 
   return (
-    <Card className={`lg:${desktopView} w-full m-10 leading-9 h-full lg:mt-20`}>
+    <Card className={`${desktopView} m-10 leading-9 h-full lg:mt-20`}>
       <CardHeader className="flex items-center w-full gap-4 space-y-0">
         <div className="w-full space-y-1">
           <div className="flex items-center">

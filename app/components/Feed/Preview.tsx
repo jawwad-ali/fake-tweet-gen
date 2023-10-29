@@ -17,15 +17,8 @@ const Preview = () => {
     disptach(updatePreview(event));
   };
 
-  function handleActiveClass() {
-    if (activeDesktop) {
-      setActiveDesktop(true);
-      setActiveMobile(false);
-    }
-  }
-
   return (
-    <div className="flex ml-8 ">
+    <div className="lg:flex lg:ml-8 hidden ">
       <Button
         variant="outline"
         className={`w-1/2 ${activeDesktop ? "bg-blue-300" : ""}`}

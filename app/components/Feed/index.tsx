@@ -6,20 +6,20 @@ import BgImage from "./img/pattern.png";
 
 const Feed = () => {
   return (
-    <div className="flex flex-col flex-1">
+    <div className="flex flex-col w-full mt-10 lg:mt-0">
       {/* Show Desktop OR Mobile View */}
       <Preview />
       <div
-        className={`w-full ml-8 border rounded-lg`}
+        className={`w-full lg:ml-8 border rounded-lg`}
         style={{
           backgroundImage: `url(${BgImage.src})`,
           height: "100%",
-          width: "100%",
-          overflow: "hidden",
+          width: "96.5%",
+          // overflow: "hidden",
         }}
       >
         <div className="relative w-full">
-          <div className="absolute w-full h-full top-4 left-5">
+          <div className="absolute w-full h-full top-4 lg:left-5">
             {/* Live Preview Button */}
             <Button
               variant={"outline"}
@@ -27,7 +27,7 @@ const Feed = () => {
             >
               Live Preview
             </Button>
-            <div className="relative flex flex-col grow items-center justify-center w-full h-[50vh]">
+            <div className="relative flex flex-col grow items-center justify-center w-full lg:h-[50vh]">
               {/* Main Tweet Component */}
               <Tweet />
             </div>
